@@ -1,0 +1,138 @@
+/*  
+Dans cette feuille de style CSS , je vais pouvoir définir l'apparence que je veux donner aux différents éléments qui composent ma page ! 
+
+### la syntaxe ###
+
+element {
+    propriete:valeur;
+}
+
+### cibler via la classe de lélément ###
+.laclasse{
+    propriete:valeur;
+}
+
+### cibler via son ID un élément ###
+#monID {
+    propriete:valeur;
+}
+
+Consigne : 
+
+1- tous les liens de mon header son en noir
+2- non souligné
+3- affiché en ligne grace a la propriete "display"
+
+*/
+
+ header a{
+    color:black;
+    text-decoration:none;
+    
+}
+header ul {
+    padding:0;
+    margin: 0;
+}
+header ul li{
+    display: inline-block;
+    text-align: center;
+    width: 317px;
+}
+
+footer adress a{
+    display: inline-block
+}
+
+/* je souhaite que mes liens soit rouge qd on passe la souris */
+
+a:hover {
+    color: #dd0613;
+}
+
+header ul li.current a {
+    color: #dd0613;
+}
+
+main {
+    /* je veux definir la largeur de ma page */
+    width: 100%;
+    
+    /* mais , je ne vais pas au dela de 960 px */
+    max-width: 960px;
+    
+    /* margin : top/bottom left/right */
+    margin: 60px auto ;
+    
+    /* je rajoute un fond blanc a ma page */
+    background: #FFF;
+    
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 25px;
+    
+    padding: 25px;
+    
+    overflow: hidden;
+}
+
+/* je souhaite changer la couleur du fond de ma page */
+
+body {
+    background-color: cornflowerblue;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    /* bordure pour souligner mon titre (solid , dotted=point , dashed=traits d'union )*/
+    border-bottom: 1px solid #000;
+    
+}
+
+header section {
+    height: 359px;
+    width: 100%;
+    background: url(../IMG/bandeau.png);
+    background-size:cover;
+}
+
+
+
+/* CONSIGNE 1-a main , je souhaite ajouter une marge top/bottom de 60 px;
+            2-ajouter avec la propriete "border-radius" un arrondi de 5px
+            3 puis grace a "box-shadow" ajouter une ombre legere autour de main.
+
+/* box-shadow: offset-x | offset-y | blur-radius | color */
+
+/* overflow avec la valeur hidden va supprimer laffichage de tous les elements qui depasse du main */
+
+
+
+section aside {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+section aside img {
+    max-width: 100%;
+}
+
+section article {
+    width: calc(50% - 20px);
+    height: auto;
+    float: left;
+    /* 1ere possibilité : padding 
+    padding : 0 10px 0 10px;
+    box-sizing:borde-box; */
+    /* 2eme possibilité : margin */
+    margin: 0 10px;
+    font-family: arial, sans-serif;
+    text-align: justify;
+    
+}
+
+section article p {
+    
+}
