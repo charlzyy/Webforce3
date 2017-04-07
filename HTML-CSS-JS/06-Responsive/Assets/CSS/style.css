@@ -1,0 +1,91 @@
+
+
+header img {
+    width: 100%;
+    height: 100vh !important;
+    object-fit: cover;
+    
+}
+
+.rm {
+    margin: 0 !important;
+}
+
+.rp {
+    padding: 0 !important;
+}
+.po {
+    padding: 60px;
+    padding-left: 5px;
+}
+
+.m {
+    margin-left: 0px;
+}
+mt-40 {
+    margin-top: 40px;
+}
+
+.relative {
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.col-xs-12 nav {
+    position: absolute !important;
+    left: 42%;
+    top: 10px;
+    padding: 10px 40px;
+    background-color:rgba(1,1,1,1.6) ;
+    /*rgba(0,0,0,0.6)*/
+    z-index: 1;
+    color: black;
+
+}
+.col-xs-12 nav ul {
+    text-align: center;
+}
+
+.col-xs-12 nav ul li {
+    text-align: center;
+    list-style: none;
+}
+
+.col-xs-12 nav ul li a{
+    text-decoration: none;
+}
+
+.col-xs-12 nav ul li a:hover{
+    color:white;
+    
+}
+
+
+#NOS-VIDEOS .col-md-6{
+     padding-left: 20px;
+}
+
+#NOS-VIDEOS{
+    background: url(../img/twilight.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer p{
+    text-align: center;
+    padding-top: 200px;
+}
+
+#VIDEOS-SUITE{
+    background: url(../img/nuit.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+body{
+    background-image: linear-gradient(80deg , black, white)
+}

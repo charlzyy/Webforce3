@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TITRE DE MA PAGE</title>
+    <!-- s'assurer qu'il utilise la derniere version du moteur de rendu -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!--affichage du site sans zoom , initialisé a 100%-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- HTML5 shiv -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" integrity="sha256-1eSvllkLdrfxD6G8RGF9h+mQuD93Af5+GdPBMNc7uMQ=" crossorigin="anonymous"></script>
+    
+    <style>
+        [class*="col-"] {
+            background-color: rgba(86, 61, 124, 0.15);
+            border: 1px solid rgba(86, 61, 124, 0.2);
+            padding-bottom: 15px;
+            padding-top: 15px;
+            margin-bottom: 5px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+   
+   <!-- le container va inclure l'ensemble de nos lignes et colonnes -->
+   <!-- bootstrap propose 2 container : .container et le .container-full -->
+   <div class="container">
+       
+       <!--création d'une ligne -->
+       <div class="row">
+            
+                <!-- dans votre ligne ou rangée vous pouvez créer plusieurs colonnes , mais rappelez-vous toujours sur la base de nos 12 colonnes -->
+                
+                <!-- une grande colonne de 12 -->
+                <div class="col-lg-12">COL-LG-12</div>
+                
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div> 
+                
+                <div class="col-lg-4">0</div>
+                <div class="col-lg-4">0</div>
+                <div class="col-lg-4">0</div>
+                
+            
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3"></div>
+                
+                <!-- je peux imbriquer mes rangées -->
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4">col-lg-4</div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-6">col-lg-6</div>
+                                <div class="col-lg-6">
+
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </div>                        
+    
+       </div>
+   
+       <!-- PLUSIEURS TYPE DE COLONNES: 
+       
+           lg : ecran large
+           md : ecran moyen (medium)
+           sm : ecran réduit (small)
+           xs : petit ecran (x-small)
+        -->
+        
+        <div class="row">
+            <!-- observer le comportement -->
+            
+            
+            <!-- test avec lg -->
+            <div class="col-lg-6">lg-6</div>
+            <div class="col-lg-6">lg-6</div>
+            <!-- test avec md -->
+            <div class="col-md-6">md-6</div>
+            <div class="col-md-6">md-6</div>
+            <!-- test avec sm -->
+            <div class="col-sm-6">sm-6</div>
+            <div class="col-sm-6">sm-6</div>
+            <!-- test avec xs -->
+            <div class="col-xs-6">xs-6</div>
+            <div class="col-xs-6">xs-6</div>
+            
+        </div>      
+       
+       <!-- vous pouvez preciser pour chaque taille d'ecran le nombre de colonnes que vous souhaitez -->
+       
+       <div class="row">
+           <div class="col-lg-12 col-md-6 col-sm-3">col-lg-12 col-md-6 col-sm-3 </div>
+           <div class="col-lg-12 col-md-6 col-sm-9">col-lg-12 col-md-6 col-sm-9 </div>
+       </div>
+   
+       <!-- col-xx-push-* : décaler une collone vers la droite 
+       col-xx-pull-* : décaler une colonne vers la gauche
+       col-xx-offset-* : permet de sauter des colonnes
+       visible-xx : permet de rendre visible une colonne pour un type d'ecran en particulier
+       hidden-xx : permet de cacher une colonne pour un type d'ecran en particulier. 
+       -->
+   
+   </div>
+   
+   
+   
+   
+   
+   
+   
+    <!-- j query -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <!-- bootstrap js -->
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
