@@ -1,0 +1,19 @@
+.page{
+    max-width:1000px;
+    max-height: 750px;
+   
+}
+
+.gauche img{
+    float: left;
+    width:50%;
+    height:750px;
+    
+}
+
+div img{
+    float: left;
+     width:25%;
+    height:250px;
+    }
+

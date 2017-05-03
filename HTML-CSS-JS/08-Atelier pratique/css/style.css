@@ -1,0 +1,180 @@
+#navbar  ul{
+    margin-left:16%;
+    margin-right: 5px;
+}
+
+#navbar ul li {
+    margin-right: 35px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+.container {
+    background-color: #1e1e1e;
+}
+.logo{
+    margin-left: 20px;
+}
+
+.imgclick{
+    text-align: center;
+    background-color: #101010;
+}
+
+.imgclick .row a {
+    margin-right: 15px;
+}
+
+.fr{
+    float: right;
+}
+
+.telephone{
+    text-align: center;
+    background-color: black;
+}
+
+.telephone a {
+    text-decoration: none;
+}
+
+.telephone h1, h2, p {
+    color: white;
+}
+
+.telephone h2 {
+    margin-top: 0px;
+    padding-top: 45px;
+}
+
+.black h2, p{
+    color: black;
+}
+
+.black p, h2, a{
+    
+}
+
+.black{
+    padding-left: 10px;
+}
+
+.ml{
+    padding-left: 15%;
+}
+
+.mr{
+    margin-top: 80px;
+    padding-right: 33%;
+    text-align: center;
+}
+
+.imgrelou img{
+    margin-left: 50%;
+}
+
+article {
+    background-color: black;
+}
+
+.black p {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+footer h1 {
+    color: white;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+   
+}
+
+.contact{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.bo {
+    background-color: dodgerblue;
+    color: white;    
+}
+
+.form-group {
+    margin-bottom: 0px;
+    padding-top: 0px;
+   
+}
+.width {
+    width: 500px;
+    
+}
+
+.width input{
+    width: 246px;
+    float: left;
+    margin-bottom: 20px;
+    padding: 18px 9px;
+    margin-top: -2px;
+}
+
+.width .form-group {
+    width: 230px;
+    float: left;
+}
+
+.dd{
+    margin-left: 22px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .mr {
+    display:block;
+    clear:both;
+      margin-top: 0px;
+  }
+.ml img{
+        margin-left: 20px;
+        margin-top: 10px;
+    margin-bottom: 0px;
+    } 
+    .mr h2,p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    } 
+    
+    .black p{
+        margin-top: 0px;
+        
+    }
+    .imgclick a {
+        width: calc(100%/4);
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+  .imgclick a img{
+      width: calc(100%/3);
+    
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .imgclick a img{
+      width: calc(100%/2);
+    
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .imgclick a img{
+    width: calc(100/);
+  }
+}
