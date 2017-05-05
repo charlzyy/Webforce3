@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Encodage pour les accents -->
+    <meta charset="UTF-8">
+    
+    <!-- Titre de la Page -->
+    <title>Gestion de mes Contacts</title>
+    
+    <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->    
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+    <!-- HTML5 Shiv -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js" integrity="sha256-sqQlcOZwgKkBRRn5WvShSsuopOdq9c3U+StqgPiFhHQ=" crossorigin="anonymous"></script>
+    
+    <style>
+        main{
+            max-width: 990px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        section{
+            width: 100%;
+            height: auto;
+            float: left;
+            min-height: 200px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(0deg, #CCC #FFF);
+            border: 1px solid #CCC;
+        }
+        h1{
+            font-family: arial, helvetica, sans-serif;
+            font-weight: normal;
+            text-align: center;
+            color: #000;
+        }
+        article{
+            font-family: arial, helvetica, sans-serif;
+            font-size: 14px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+    
+</head>
+<body>
+   <main>
+       
+   </main>
+   
+   <!-- CONSIGNE : avec l'aide de jQuery , vous devrez :
+   
+       1. a l'aide d'une API de géolocalisation , vous affichez dans un paragraphe du formulaire l'adresse IP ainsi que la ville et/ou le code postal de l'utilisateur connecté.
+       
+       //- utilisation de JSONP : geoip.nekudo.com || ip-api.com
+       
+       -->
+    
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    
+    
+    <script>
+        $(function(){
+            // -- 1. recuperation de mes articles 
+            $.getJSON('https://jsonplaceholder.typicode.com/posts',function(articles) {
+                                    console.log(articles);
+            // -- 2. je vais parcourir la liste de mes articles pour les afficher sur la page.
+            $.each(articles, function(indice, article){
+                $("<section><header><h1>" + article.title + "</h1></header><article>" + article.body + "</article></section>").appendTo($('main'));
+                
+                if(indice == 5) {
+                    return false;
+                }
+            });
+          });
+        });  
+    </script>
+    
+</body>
+</html>
