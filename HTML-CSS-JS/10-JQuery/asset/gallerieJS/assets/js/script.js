@@ -1,3 +1,18 @@
+/* intitulé de l'exercice : 
+
+01 - initialiser la galerie d'images en s'inspirant de la structure 
+02 - creer une fonction qui va récuperer la source d'une image lorsqu'on clique dessus et intégrer cette source sur une autre balise image.
+
+    001 - au clique --> récuperer la source de l'image
+    002 - stocker sa valeur dans une variable
+    003 - au clique --> intégrer l'lement stocké comme source de la nouvelle image
+    004 - le processus doit fonctionner en alternatif --> récuperer source / intégrer source */
+
+
+
+
+
+
 var tabImages = [
   'https://s-media-cache-ak0.pinimg.com/564x/a2/fc/97/a2fc976aec0f00ca1fbd7149366dae8d.jpg',
   'https://s-media-cache-ak0.pinimg.com/564x/36/56/70/3656706b401466401f7539a8da910220.jpg',
@@ -10,32 +25,33 @@ var tabImages = [
   'https://s-media-cache-ak0.pinimg.com/564x/b2/25/7f/b2257f664eb6fdac504634aed36e8f96.jpg'
 ]
 
-var objImages = {
-  img_01 : {
-    name : 'faux',
-    source : 'https://s-media-cache-ak0.pinimg.com/564x/a2/fc/97/a2fc976aec0f00ca1fbd7149366dae8d.jpg',
-  },
-  img_02 : {
-    name : 'jeune',
-    source : 'https://s-media-cache-ak0.pinimg.com/564x/36/56/70/3656706b401466401f7539a8da910220.jpg',
-  },
-  img_03 : {
-    name : 'jeune',
-    source : 'https://s-media-cache-ak0.pinimg.com/564x/49/3b/4b/493b4bba089437d76cd964227cba75ac.jpg',
-  },
-  img_04 : {
-    name : 'house',
-    source : 'https://s-media-cache-ak0.pinimg.com/564x/62/12/f5/6212f59c09e483e578906349c7d88048.jpg',
-  },
-  img_05 : {
-    name : 'cowboys'
-    source : 'https://s-media-cache-ak0.pinimg.com/564x/ab/c7/f6/abc7f615f2d7867b5de37cc4a014f877.jpg',
-  },
-  img_06 : {
-    name : 'cowboys'
-    source : 'https://s-media-cache-ak0.pinimg.com/564x/3b/c1/79/3bc17960fb1da9bc870da42cb041c177.jpg',
-  },
+function generationGalerie(tableau){
+    for(var i = 0; i<tableau.length; i++){
+        var square = ' <div class="col-xs-4"><img class="img-thumbnail" src=" ' + tableau[i] + ' " alt=""></div>';
+        //console.log(square);
+        $(square).appendTo(".container");
+    }
 }
 
-//creation element
-//$('').appendTo('.container')
+var getSource = '';
+
+$(function(){
+    generationGalerie( tabImages )
+    
+    $('img').on('click', function(event){
+        
+        
+        if(getSource.length == 0){
+            getSource = event.target.src;
+        }else{
+            // var memory = event.target.src
+            event.target.src = getSource;
+            getSource = '';// getSource = memory;
+        }
+    
+    
+    });
+});
+
+
+
